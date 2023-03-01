@@ -1,7 +1,4 @@
 import s from "./Container.module.css"
-import { UserCard } from "components/UserCard/UserCard"
-import users from "./user.json"
-
 
 export const Container = () => {
     return(
@@ -11,7 +8,6 @@ export const Container = () => {
                     src={require("images/twitImages.png")}
                     alt="img"
                 />
-                <UserCard users={users}/>
             </div>
         </ul>
     )
