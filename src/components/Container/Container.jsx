@@ -1,14 +1,10 @@
-import s from "./Container.module.css"
+import { UserCard } from "components/UserCards/UserCard"
+import user from "./user.json"
 
 export const Container = () => {
     return(
-        <ul>
-            <div className={s.container}>
-                <img 
-                    src={require("images/twitImages.png")}
-                    alt="img"
-                />
-            </div>
-        </ul>
+        <>
+        <UserCard users={user} />
+        </>
     )
 }

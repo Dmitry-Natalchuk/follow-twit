@@ -1,0 +1,77 @@
+.items {
+  display: grid;
+  max-width: calc(100vw - 48px);
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-gap: 16px;
+}
+.list{
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.containerImg {
+    max-width: 380px;
+    text-align: center;
+    padding-top: 28px;
+    padding-bottom: 36px;
+    box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
+    border-radius: 20px;
+    background: linear-gradient(114.99deg, #471CA9 -0.99%, #5736A3 54.28%, #4B2A99 78.99%);
+  }
+.avatarLine{
+  position: relative;
+  width: 100%;
+  height: 8px;
+  margin-top: 18px;
+  background: #EBD8FF;
+  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.06), inset 0px -1.71846px 3.43693px #AE7BE3, inset 0px 3.43693px 2.5777px #FBF8FF;
+  
+  }
+.avatar{
+  position: relative;
+  margin: 0 auto;
+  width: 80px;
+  background: #EBD8FF;
+  top: -50px;
+  
+  background: #EBD8FF;
+  box-shadow: 0px 4.39163px 4.39163px rgba(0, 0, 0, 0.06), inset 0px -2.19582px 4.39163px #AE7BE3, inset 0px 4.39163px 3.29372px #FBF8FF;
+  border-radius: 50%;
+  padding: 9px;
+  border-radius: 50%;
+}
+
+
+.followers {
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+margin-bottom: 26px;
+text-transform: uppercase;
+color: #EBD8FF;
+}
+.tweets {
+  font-weight: 500;
+font-size: 20px;
+margin-top: -30px;
+line-height: 24px;
+margin-bottom: 16px;
+text-transform: uppercase;
+color: #EBD8FF;
+}
+
+.btn {
+  width: 200px;
+  cursor: pointer;
+  padding: 14px 56px;
+  background: #EBD8FF;
+  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border: 0;
+  transition: transform 250ms;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background: #5CD3A8;
+}
