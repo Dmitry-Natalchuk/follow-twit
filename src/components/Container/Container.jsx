@@ -15,18 +15,19 @@ export const Container = () => {
     const clickBtnFollow = (id) => {
         setUserFollowers(userFollowers.map(user => {
             if (id === user.id) {
-                if (user.follow === false) {
+                if (!user.follow) {
                     return {
                     ...user,
                     follow: !user.follow,
                     followers: user.followers +1
                     }
             }
-            return{
-                ...user,
-                follow: !user.follow,
-                followers: user.followers -1
-
+            if(user.follow) {
+                return{
+                    ...user,
+                    follow: !user.follow,
+                    followers: user.followers -1
+                }
             }}
             return user;
         }))
